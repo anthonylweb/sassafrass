@@ -1,0 +1,46 @@
+#secondary{
+	width:100%;
+	min-width: 15em;
+	position: relative;
+
+	@media screen and (min-width: 1200px){
+		width:20%;
+	}
+
+	aside{
+			
+
+			article{
+			border: $bg-color 1px solid;
+			border-radius: 5px;
+			text-align: center;
+			margin: 1em 0;
+			@include inputField();
+			@include submit();
+
+			}
+			
+
+			.widget-title{
+				text-align: center;
+				font: 1.25em $txt-font;
+				color: $text-color;
+				}
+
+			p{
+				color: $text-color;
+			}
+
+			hr{
+				color: $hr-color;
+				background-color: $hr-color;
+				height: 1px;
+				border: 0;
+				width: 60%;
+				}	
+			
+
+		}
+
+}
+

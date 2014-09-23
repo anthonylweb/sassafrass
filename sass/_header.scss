@@ -1,0 +1,45 @@
+#navbar{
+	background-color: $bg-color; 
+	width: 100%; 
+	position: relative;
+	z-index:2;
+	}
+
+
+#site-info{
+	background: $topHeadColor;
+	position: relative;
+	padding-left: 10%;
+
+	h1{
+		a{	
+			
+			color: #fff;
+			display: block;
+			margin: 0 0 .25em 0;
+			text-decoration: none;
+
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+
+	
+
+
+	#tagline{
+		min-width: 14em;
+		position: relative; 
+		margin-top: -1em; 
+		color: #fff; 
+		font: 1.3em $tagline;
+
+	@media screen and (max-width: 1443px){
+		font-size: 1em;}
+	} 
+}
+
+
+
+

@@ -1,0 +1,14 @@
+.search-form{
+
+	@include submit();
+
+	@include inputField();
+
+
+	label strong{
+		color: $f-label-color;
+		font: 1.5em $label-font;
+	}
+
+
+}

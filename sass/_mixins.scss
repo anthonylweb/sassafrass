@@ -1,0 +1,55 @@
+@mixin submit(){
+
+input[type=submit], button{
+				background:$bg-color;
+				color: #fff;
+				border: none;
+				padding: 8px;
+				border-radius: 5px;
+				margin-left: 15px; 
+				font-size: 1.5em;
+				display: inline-block;
+  				box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+			}
+
+			input[type=submit]:hover, input[type=submit]:focus, input[type=submit]:active, button:hover, button:focus, button:active{
+				background:$hover-bg;
+				color: $input-text-color;
+				
+
+			}
+
+}
+
+@mixin inputField(){
+
+	input[type = text], textarea, input[type = email], input[type=search]{
+				border-radius: 5px;
+				padding: 10px;
+				font: 1.2em $input-text;	
+				margin: 10px 0;	}
+
+			input[type = text]:active, input[type = text]:focus, textarea:active, textarea:focus{
+				outline-color: $bg-color;
+			}
+}
+
+
+@mixin rotate($deg){
+	/* Safari */
+	-webkit-transform: rotate($deg);
+
+	/* Firefox */
+	-moz-transform: rotate($deg);
+
+	/* IE */
+	-ms-transform: rotate($deg);
+
+	/* Opera */
+	-o-transform: rotate($deg);
+
+	/* Internet Explorer */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+
+}

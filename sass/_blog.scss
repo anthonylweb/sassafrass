@@ -1,0 +1,51 @@
+#blog-home article{
+	margin: 2em 0;
+}
+
+
+h1.entry-title{
+	
+
+	a{
+	color: $h-content-color;
+	font: 1em$h-link-text;	}
+}
+
+#respond{
+	border-top: 3px solid $hr-color;
+	border-bottom: 3px solid $hr-color;
+	margin: 2em 0;
+	padding: 0 3em;
+	@include submit();
+	@include inputField();
+
+		#commentform{
+
+			.comment-form-comment label{
+				font: 3em $comment-label-text;
+				color: $label-color;
+				display:  inline-block;
+				position: relative;
+				bottom: 1.5em;
+				left: 1em;
+				margin-left: -2em;
+				@include rotate(-90deg);
+
+				@media screen and (max-width: 1069px){
+					font-size: 2.5em;}
+
+				@media screen and (max-width: 1052px){
+					bottom: 0;
+					left:2em;
+					@include rotate(0deg);}	
+			}
+		}
+
+	.form-allowed-tags{
+		font: .8em $f-a-tags;
+		color: $h-content-color;
+	}	
+}
+
+
+
