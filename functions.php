@@ -12,13 +12,14 @@ $detect = new Mobile_Detect;
 
 /*Enque Scripts and Styles into the wp_head() */
 
-function naked_and_sassy_scripts() {
+function sassy_scripts() {
 	wp_enqueue_script("jquery");
 	wp_enqueue_script("custom-scripts",  get_template_directory_uri()."/js/scripts.js", array(), '1.0.0', 'all');
+	wp_enqueue_script("custom-scripts",  get_template_directory_uri()."/js/html5shiv.min.js", array(), '1.0.0', 'all');
 	wp_enqueue_style('style', get_template_directory_uri().'/style.css', array(), '1.0.0', 'all');
 }
 
-add_action( 'wp_enqueue_scripts', 'naked_and_sassy_scripts' );
+add_action( 'wp_enqueue_scripts', 'sassy_scripts' );
 
 /*Add HTML5 Support */
 add_theme_support( 'html5');
@@ -61,7 +62,7 @@ function mytheme_nav_fallback1() {
 /**
  * Register widgetized area and update sidebar with default widgets
  */
-function naked_and_sassy_widgets_init() {
+function sassy_widgets_init() {
 	register_sidebar( array(
 		'name' => __( 'Main Sidebar', 'nekked' ),
 		'id' => 'sidebar-1',
@@ -73,5 +74,5 @@ function naked_and_sassy_widgets_init() {
 
 		
 }
-add_action( 'widgets_init', 'naked_and_sassy_widgets_init' );
+add_action( 'widgets_init', 'sassy_widgets_init' );
 
