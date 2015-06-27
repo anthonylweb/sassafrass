@@ -14,6 +14,7 @@ $detect = new Mobile_Detect;
 
 function sassy_scripts() {
 	wp_enqueue_script("jquery");
+	wp_enqueue_script("Modernizr-flexbox-test",  get_template_directory_uri()."/js/modernizr.flexboxTest.min.js", array(), '1.0.0', 'all');
 	wp_enqueue_script("custom-scripts",  get_template_directory_uri()."/js/scripts.js", array(), '1.0.0', 'all');
 	wp_enqueue_script("custom-scripts",  get_template_directory_uri()."/js/html5shiv.min.js", array(), '1.0.0', 'all');
 	wp_enqueue_style('style', get_template_directory_uri().'/style.css', array(), '1.0.0', 'all');

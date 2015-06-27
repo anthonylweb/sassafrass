@@ -4,12 +4,13 @@ Theme URI: http://www.anthonylaurence.net
 Description: My basic starter theme for all my Wordpress Projects
 Author: Anthony Laurence
 Author URI: http://www.anthonylaurence.net
-Version: 1.1.0
+Version: 2.0
 
 
 General comments (optional).
 */
 @import "compass/reset";
+@import "compass/css3";
 @import "fonts";
 @import "variables";
 @import "mixins";

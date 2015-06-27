@@ -1,7 +1,7 @@
 @mixin submit(){
 
 input[type=submit], button{
-				background:$bg-color;
+				background-color: $button-bg-color;
 				color: #fff;
 				border: none;
 				padding: 8px;
@@ -10,13 +10,19 @@ input[type=submit], button{
 				font-size: 1.5em;
 				display: inline-block;
   				box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+
+  				@include transition(background-color, 1s, ease-in);
+  				@include transition(color, 1s, ease-in);
+
 			}
 
-			input[type=submit]:hover, input[type=submit]:focus, input[type=submit]:active, button:hover, button:focus, button:active{
-				background:$hover-bg;
-				color: $input-text-color;
-				
 
+			input[type=submit]:hover,  button:hover{
+				background-color: $button-bg-hover-color;
+				color: $button-text-hover-color;
+
+				@include transition(background-color, 1s, ease-in);
+				@include transition(color, 1s, ease-in);
 			}
 
 }
@@ -30,7 +36,7 @@ input[type=submit], button{
 				margin: 10px 0;	}
 
 			input[type = text]:active, input[type = text]:focus, textarea:active, textarea:focus{
-				outline-color: $bg-color;
+				outline-color:  $border-color;
 			}
 }
 

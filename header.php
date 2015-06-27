@@ -17,15 +17,7 @@
 	<!--[if lt IE 9]>
 		<script src="dist/html5shiv.js"></script>
 	<![endif]-->
-	<?php wp_head();
-
-	// Removes top margin for admin bar if user is not logged in. 
-
-		if ( !is_user_logged_in() ): ?>
-    <style>
-    html {margin-top: -32px !important;}
-    </style>
-    <?php endif; ?>
+	<?php wp_head(); ?>
 
 
 </head>

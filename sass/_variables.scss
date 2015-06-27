@@ -1,8 +1,35 @@
-//Standard Colors
+/* ============   Standard Colors   =======*/
+
+//Background Colors
+$main-background-color: #efefef;
+$topHeadColor:  #1274B2;
+$nav-bg-color: #009DFF;
+$footer-bg-color: #1274B2;
+
+//Text Colors
+
+$copyright-text-color: #efefef;
+
+
+//Nav Colors
+$hover-border-colors: #CCCA14;
+$nav-no-hover-color: $nav-bg-color;
+$nav-current-color: #CC1514;
+
+
+//#FF5C40
+//Sidebar Colors
+
+$border-color: #020B66;
+
+
+//Form Colors
+$button-bg-color: #1274B2;
+$button-text-hover-color: #FF5C40;
+$button-bg-hover-color: #3D7599;
 
 
 
-$bg-color: #020B66;
 $link-color: #1623B2;
 $h-content-color: #665102;
 $hr-color: #1623B2;
@@ -13,7 +40,9 @@ $li-txt-color: #41261a;
 $input-text-color: #5a5e58;
 $f-label-color: #020B66;
 $sn-link-color: #5a5e58;
-$topHeadColor:  #2cb230;
+
+
+
 
 
 //Standard fonts
@@ -22,11 +51,14 @@ $txt-font:  Helvetica;
 $h-font: "caviar";
 $nav-font: Arial;
 $copyright: "caviar";
+
 $h-link-text: "bebas";
 $comment-label-text: "bebas";
 $f-a-tags: "caviar";
 $input-text: "bebas";
 $tagline: "bebas";
 $label-font: "bebas";
+
+
 
 

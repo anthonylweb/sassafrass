@@ -23,9 +23,17 @@ img.rwd{
 .inline{
 	display: block;
 
-	@media screen and (min-width: 1200px){
+	@media screen and (min-width: 800px){
 		display: inline-block;
 		vertical-align: top;
 
 	}
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
 }

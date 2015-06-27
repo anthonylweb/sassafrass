@@ -1,16 +1,16 @@
 footer#colophon{
-	background: $bg-color;
+	background: $footer-bg-color;
 	width: 100%;
 	height: 5em;
 	position: relative;
 
 		.copyright{
 			text-align: right;
-			font: .75em $copyright;
+			font: 1em $copyright;
 			margin: .2em;
 
 			a{				
-				color: $hover-bg;
+				color: $copyright-text-color;
 				text-decoration: none;
 
 				&:hover{
