@@ -76,35 +76,40 @@ a:hover{
 
 h1{
 	color: $h-content-color;
-	font: 2em $h-font;
+	font: 2rem $h-font;
 }	
 
 h2{
 	color: $h-content-color;
-	font: 2em $h-font;
+	font: 1.7rem $h-font;
 	}
 	
 h3{
 	color: $h-content-color;
-	font: 1.3em $h-font;}	
+	font: 1.5rem $h-font;}	
 
 h4{
 	color: $h-content-color;
-	font: 1.5em $h-font;
+	font: 1.25rem $h-font;
 }	
 
 p{
 	
 	color: $text-color;
-	margin: 1em 0;
+	margin: 1rem 0;
 	line-height: 100%;
 }	
 
 ul{
+
+	width: 80%;
+	margin: 0 auto;
+
 		li{
 			color: $li-txt-color;
-			font: 1.25em $txt-font;
+			font: 1rem $txt-font;
 			letter-spacing: 1px; 
+			list-style: square;
 		}
 	}
 

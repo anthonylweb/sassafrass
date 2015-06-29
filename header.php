@@ -23,6 +23,18 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+
+	<?php 
+		$detect = new Mobile_Detect;
+		if($detect->isMobile()){
+	?>
+
+	<nav id="mobile-nav">
+		<?php wp_nav_menu( array( 'theme_location' => 'top_menu', 'menu_class' => 'nav-menu' ) ); ?>			
+	</nav>
+
+	<?php } ?>
 		
 	<div id="page" class="hfeed site">
 	
@@ -32,6 +44,12 @@
 			<h1 id="tagline"><?php bloginfo('description'); ?></h1>
 		</section>
 
+
+		<?php 
+			$detect = new Mobile_Detect;
+			if(!$detect->isMobile()){
+		?>
+
 			<div id="navbar" class="navbar">
 				
 				<nav id="site-navigation" class="navigation main-navigation" role="navigation">
@@ -39,6 +57,8 @@
 					<?php wp_nav_menu( array( 'theme_location' => 'top_menu', 'menu_class' => 'nav-menu' ) ); ?>					
 				</nav><!-- #site-navigation -->				
 			</div><!-- #navbar -->   
+
+		<?php } ?>
 			
 		
 

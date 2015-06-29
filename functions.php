@@ -10,14 +10,18 @@ $detect = new Mobile_Detect;
 
 ******/
 
+require_once( $_SERVER['DOCUMENT_ROOT'].'/sassafrass/wp-content/themes/sassafrass-test/Mobile_Detect.php');
+
+
 /*Enque Scripts and Styles into the wp_head() */
 
 function sassy_scripts() {
 	wp_enqueue_script("jquery");
 	wp_enqueue_script("Modernizr-flexbox-test",  get_template_directory_uri()."/js/modernizr.flexboxTest.min.js", array(), '1.0.0', 'all');
 	wp_enqueue_script("custom-scripts",  get_template_directory_uri()."/js/scripts.js", array(), '1.0.0', 'all');
-	wp_enqueue_script("custom-scripts",  get_template_directory_uri()."/js/html5shiv.min.js", array(), '1.0.0', 'all');
+	wp_enqueue_script("html5shiv",  get_template_directory_uri()."/js/html5shiv.min.js", array(), '1.0.0', 'all');
 	wp_enqueue_style('style', get_template_directory_uri().'/style.css', array(), '1.0.0', 'all');
+	wp_enqueue_script("slicknav",  get_template_directory_uri()."/js/jquery.slicknav.min.js", array(), '1.0.0', 'all');
 }
 
 add_action( 'wp_enqueue_scripts', 'sassy_scripts' );

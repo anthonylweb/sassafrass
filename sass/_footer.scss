@@ -4,8 +4,10 @@ footer#colophon{
 	height: 5em;
 	position: relative;
 
-		.copyright{
-			text-align: right;
+	.copyright{text-align: right;}
+
+		.copyright, .credit{
+			width: 49%;
 			font: 1em $copyright;
 			margin: .2em;
 
@@ -18,7 +20,7 @@ footer#colophon{
 				}
 			}
 
-			@media screen and (max-width: 700px){
+			@media screen and (max-width: $mobile-break){
 				text-align: center;
 
 			}

@@ -14,7 +14,7 @@ $copyright-text-color: #efefef;
 //Nav Colors
 $hover-border-colors: #CCCA14;
 $nav-no-hover-color: $nav-bg-color;
-$nav-current-color: #CC1514;
+$nav-current-color: #890F0F;
 
 
 //#FF5C40
@@ -25,20 +25,25 @@ $border-color: #020B66;
 
 //Form Colors
 $button-bg-color: #1274B2;
-$button-text-hover-color: #FF5C40;
-$button-bg-hover-color: #3D7599;
+$button-text-hover-color: $button-bg-color;
+$button-bg-hover-color: #efefef;
 
 
+//Font Colors
+$link-color:#1274B2;
+$h-content-color:#1274B2;
+$f-label-color: #1274B2;
+$hr-color: #666;
+$text-color: #024466;
+$li-txt-color: #757272;
 
-$link-color: #1623B2;
-$h-content-color: #665102;
-$hr-color: #1623B2;
+
 $label-color: #4A75B2;
 $hover-bg: #5D92B2;
-$text-color: #024466;
-$li-txt-color: #41261a;
+
+
 $input-text-color: #5a5e58;
-$f-label-color: #020B66;
+
 $sn-link-color: #5a5e58;
 
 
@@ -48,17 +53,19 @@ $sn-link-color: #5a5e58;
 //Standard fonts
 
 $txt-font:  Helvetica;
-$h-font: "caviar";
+$h-font: "bebas";
 $nav-font: Arial;
 $copyright: "caviar";
+$tagline: "caviar";
+
 
 $h-link-text: "bebas";
 $comment-label-text: "bebas";
 $f-a-tags: "caviar";
 $input-text: "bebas";
-$tagline: "bebas";
+
 $label-font: "bebas";
 
 
-
+$mobile-break: 880px;
 

@@ -15,7 +15,6 @@ j(document).ready(function(){
 		});
 
 		j('footer#colophon').css({
-			'position'	: 'absolute',
 			'bottom'	: 0
 		});
 
@@ -23,6 +22,13 @@ j(document).ready(function(){
 			'flex'		: 'none'
 		});
 	}
+
+	j('#mobile-nav ul').slicknav();
+
+	j('.rwd').each(function(){
+		var w = j(this).get(0).naturalWidth;
+		j(this).css('max-width', w);
+	})
 
 });
 

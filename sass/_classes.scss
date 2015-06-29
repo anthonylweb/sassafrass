@@ -4,9 +4,10 @@
 }
 
 img.rwd{
-	/*Use this Class, along with a styled parent div, to create responsive images */
+	/*Uses JS to add a max-width to the original images width */
 	width: 100%;
 	height: auto;
+	margin: 0 15px 15px;
 } 
 
 .wrapper{
@@ -23,7 +24,7 @@ img.rwd{
 .inline{
 	display: block;
 
-	@media screen and (min-width: 800px){
+	@media screen and (min-width: $mobile-break){
 		display: inline-block;
 		vertical-align: top;
 

@@ -3,7 +3,7 @@
 input[type=submit], button{
 				background-color: $button-bg-color;
 				color: #fff;
-				border: none;
+				border: 1px solid $button-bg-color;
 				padding: 8px;
 				border-radius: 5px;
 				margin-left: 15px; 
@@ -20,6 +20,7 @@ input[type=submit], button{
 			input[type=submit]:hover,  button:hover{
 				background-color: $button-bg-hover-color;
 				color: $button-text-hover-color;
+				
 
 				@include transition(background-color, 1s, ease-in);
 				@include transition(color, 1s, ease-in);
