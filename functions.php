@@ -12,6 +12,10 @@ $detect = new Mobile_Detect;
 
 require_once( $_SERVER['DOCUMENT_ROOT'].'/sassafrass/wp-content/themes/sassafrass-test/Mobile_Detect.php');
 
+//Add GZIP
+
+ob_start("ob_gzhandler");
+
 
 /*Enque Scripts and Styles into the wp_head() */
 
