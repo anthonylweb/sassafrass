@@ -1,0 +1,164 @@
+//Provides structure for the main content sections of all of the page templates
+
+//General Flexbox Styles
+.flex-section{
+
+    @media screen and (min-width: $mobile-break) {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+}
+
+//Page Structure Styles
+ 
+#page{
+    padding-bottom: 2rem;
+    
+    #top-content{
+        background-color: $topContent-bg;
+        padding: 0;
+    }
+    
+
+    #main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        //For The Full Width Page Template
+        #full-width{
+        
+            #primary{
+                width: 70%;
+                flex-basis: 70%;
+                align-items: stretch;
+                margin: 0 auto;
+                
+            }
+        }
+        
+        
+        //For the Single Col Left Sidebar Page Template
+
+        #left-sidebar, #right-sidebar, #twin-sidebar{
+            display: flex;
+            flex-wrap: wrap;
+            
+            & > section{
+                margin: 1rem;
+                
+            }
+            
+            #primary{
+                width: 400px;
+                flex-basis: 60%;
+                align-items: stretch;
+                order: 1;
+                flex-grow: 2;
+                flex-shrink: 2;
+                
+            }
+            
+            #left-sidebar-col{
+                width: 280px;
+                flex-basis: 29%;
+                align-items: stretch;
+                order: 2;
+                flex-grow: 1;
+                flex-shrink: 1;
+            }
+        }
+        
+        //For the Single Col Right Sidebar Template - Overwrites
+        
+        #right-sidebar{
+
+            #primary{
+                order: 2;
+            }
+            
+            #right-sidebar-col{
+                order: 1;
+            }
+        }
+        
+        //For Twin Sidebar Page Template
+        #twin-sidebar{
+            
+            
+            #primary{
+                    order: 1;
+                    flex-basis: 100%;
+            }
+                
+            #right-sidebar-col{
+                    order: 2;
+                    flex-basis: 100%;
+            }
+            
+
+            #left-sidebar-col{
+                    order: 3;  
+                    flex-basis: 100%; 
+            }
+            
+            @media screen and (min-width: 750px){
+                
+                #primary{
+                        
+                        flex-basis: 100%;
+                }
+                    
+                #right-sidebar-col{
+                        
+                        flex-basis: 35%;
+                }
+                
+
+                #left-sidebar-col{
+                        
+                        flex-basis: 35%; 
+                }
+            
+            }
+            
+            @media screen and (min-width: 1000px){
+                
+                #right-sidebar-col{
+                    order: 1;
+                    flex-basis: 20%;
+                }
+                
+                #primary{
+                    order: 2;
+                    flex-basis: 48%;
+                }
+
+                #left-sidebar-col{
+                    order: 3;  
+                    flex-basis: 20%; 
+                }
+            
+            }
+   
+        }
+
+    }//end  #main    
+}//end #page
+
+#ss-par{
+    background-color: $subsection-bg;
+
+        
+}
+
+#pre-footer{
+    background-color: $prefooter-bg;
+
+    
+}
