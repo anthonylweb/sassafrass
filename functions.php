@@ -1,16 +1,6 @@
 <?php
 
-/*******
-Remove this comment block to use the Mobile Class for PHP: http://mobiledetect.net/
-NOTE: If developing locally you must concatinate in the DIR that your files are in on the local server; i.e. "SASSAFRASS" - your url to the Mobile_Detect script will then print
- out "localhost/SASSAFRASS/wp-contetn....." or else you will get a fatal error. Don't forget to remove for production!!
-
-require_once( $_SERVER['DOCUMENT_ROOT'].'/wp-content/themes/sassafras/Mobile_Detect.php');
-$detect = new Mobile_Detect;
-
-******/
-
-require_once( $_SERVER['DOCUMENT_ROOT'].'/sassafrass/wp-content/themes/sassafrass-test/Mobile_Detect.php');
+require_once( $_SERVER['DOCUMENT_ROOT'].'/wp-content/themes/sassafrass/Mobile_Detect.php');
 
 //Add GZIP
 
