@@ -1,5 +1,22 @@
 		</div><!-- #main -->
 		</div><!-- #page -->
+		<section id="ss-par" class="flex-section">
+
+        <?php
+            if( is_front_page() ){
+                require_once('home-subsection.php'); 
+            } else {
+                require_once('subsection.php');
+            } 
+        ?>
+        
+</section>
+
+<section id="pre-footer" class="flex-section">
+    <?php dynamic_sidebar('Subpage Secondary Content Section');?>
+</section>
+
+
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<section class="wrapper">  
 			

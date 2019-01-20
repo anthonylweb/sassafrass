@@ -4,7 +4,7 @@ Theme URI: http://www.anthonylaurence.net
 Description: My basic starter theme for all my Wordpress Projects
 Author: Anthony Laurence
 Author URI: http://www.anthonylaurence.net
-Version: 2.0
+Version: 3.0
 
 
 General comments (optional).
@@ -15,15 +15,15 @@ General comments (optional).
 @import "variables";
 @import "mixins";
 @import "classes";
+@import "structure";
 @import "general";
 @import "header";
 @import "menu";
-@import "main";
-@import "primary";
 @import "footer";
 @import "sidebar";
 @import "blog";
 @import "forms";
+@import "home";
 @import "slicknav";
 
 

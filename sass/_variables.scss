@@ -1,71 +1,65 @@
 /* ============   Standard Colors   =======*/
 
 //Background Colors
-$main-background-color: #efefef;
-$topHeadColor:  #1274B2;
-$nav-bg-color: #009DFF;
-$footer-bg-color: #1274B2;
+$main-background-color: #fff;
+$topHeadColor:  #5a6783;
+$nav-bg-color: #5a6783;
+$footer-bg-color: #5a6783;
+$subsection-bg: #fff;
+$prefooter-bg: #fff;
+$topContent-bg: #fff;
 
 //Text Colors
 
-$copyright-text-color: #efefef;
+$copyright-text-color: #fefefe;
+$org: #f99d10;
 
 
 //Nav Colors
-$hover-border-colors: #CCCA14;
+$hover-border-colors: #5a6783;
 $nav-no-hover-color: $nav-bg-color;
-$nav-current-color: #890F0F;
+$nav-current-color: #5a6783;
+$nav-text-hover: #8faef0;
 
-
-//#FF5C40
 //Sidebar Colors
-
 $border-color: #020B66;
 
 
 //Form Colors
-$button-bg-color: #1274B2;
+$button-bg-color: #5e6b85;
 $button-text-hover-color: $button-bg-color;
-$button-bg-hover-color: #efefef;
+$button-bg-hover-color: #7e91b5;
 
 
 //Font Colors
-$link-color:#1274B2;
-$h-content-color:#1274B2;
-$f-label-color: #1274B2;
+$link-color:#4242e0;
+$h-content-color:#3e3e3f;
+$f-label-color: #3e3e3f;
 $hr-color: #666;
-$text-color: #024466;
-$li-txt-color: #757272;
-
-
+$text-color: #3e3e3f;
+$li-txt-color: #3e3e3f;
 $label-color: #4A75B2;
 $hover-bg: #5D92B2;
-
-
-$input-text-color: #5a5e58;
-
-$sn-link-color: #5a5e58;
+$input-text-color: #3e3e3f;
+$sn-link-color: #3e3e3f;
 
 
 
 
 
 //Standard fonts
+$txt-font:  'forum';
+$h-font: 'forum';
+$nav-font: 'forum';
+$copyright: 'forum';
+$tagline: 'forum';
+$h-link-text: 'forum';
+$comment-label-text: 'forum';
+$f-a-tags: 'forum';
+$input-text: 'forum';
+$label-font: 'forum';
+$cursive: 'lambo';
 
-$txt-font:  Helvetica;
-$h-font: "bebas";
-$nav-font: Arial;
-$copyright: "caviar";
-$tagline: "caviar";
-
-
-$h-link-text: "bebas";
-$comment-label-text: "bebas";
-$f-a-tags: "caviar";
-$input-text: "bebas";
-
-$label-font: "bebas";
-
-
+//Mobile Breakpoint
 $mobile-break: 880px;
 

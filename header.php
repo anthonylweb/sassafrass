@@ -44,12 +44,6 @@
 			<h1 id="tagline"><?php bloginfo('description'); ?></h1>
 		</section>
 
-
-		<?php 
-			$detect = new Mobile_Detect;
-			if(!$detect->isMobile()){
-		?>
-
 			<div id="navbar" class="navbar">
 				
 				<nav id="site-navigation" class="navigation main-navigation" role="navigation">
@@ -57,9 +51,17 @@
 					<?php wp_nav_menu( array( 'theme_location' => 'top_menu', 'menu_class' => 'nav-menu' ) ); ?>					
 				</nav><!-- #site-navigation -->				
 			</div><!-- #navbar -->   
+			
+		<section id="top-content" class="flex-section">
+            <?php dynamic_sidebar('Top Content Section'); ?>
+        </section>
+
+		<?php
+		$detect = new Mobile_Detect;
+		if( is_front_page() && !$detect->isMobile() ) { ?>
+
+		<?php dynamic_sidebar('Slideshow Area'); ?>
 
 		<?php } ?>
-			
-		
 
 		<div id="main" class="site-main">

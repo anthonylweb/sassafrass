@@ -1,31 +1,36 @@
+#mobile-nav, .slicknav_menu{
+	display: block;
+}
+
 #navbar{
 	background-color: $nav-bg-color; 
 	width: 100%; 
 	position: relative;
 	z-index:2;
+	display: none;
+
 
 
 	#site-navigation {
-	position:relative;
-	z-index: 3;
-	height: 100%;
-	width: 80%;
-	margin: 0 auto;
+		position:relative;
+		z-index: 3;
+		width: auto;
+		margin-right: 10%;
 
 		 .nav-menu{ 
 			 position: relative;
 			 z-index: 5;
+			 width: auto;
 				 li{
 					display: inline-block;
 					position: relative;
 					padding: 1.5em 1em 0 1em;
-					border-bottom: 5px solid  $nav-no-hover-color;
-					@include single-transition(border-bottom, 1s,  ease-in);
  
 
 						a{
+							@include single-transition(color, 0.3s, ease-in);
 							color: #fff;
-							font: 1.3em $nav-font;
+							font: 1.1rem $nav-font;
 							text-decoration: none;
 							
 
@@ -37,19 +42,20 @@
 				}
 
 				 li:hover{
-					@include single-transition(border-bottom, 1s, ease-in);
-					border-bottom: 5px solid $hover-border-colors;
-
-						.children{
+					 a {
+						 @include single-transition(color, 0.3s, ease-in);
+						 color: $nav-text-hover;
+					 }
+						.sub-menu{
 							left: 0;}
 
 				}
 
 				/*Styles for the Dropdown Navigation */
-				.children{ 
+				.sub-menu{
+					background-color: $nav-bg-color;
 					position: absolute;
-					z-index: 100;				
-					top: 3em;
+					z-index: 100;
 					padding-top: 5px; 
 					width: 12em;
 					left: -999999px;
@@ -57,6 +63,7 @@
 
 						li{
 							display: list-item;
+							list-style: none;
 							padding: .5em;
 							background: $nav-bg-color;
 							a{
@@ -74,6 +81,18 @@
 		}
 
 	}
+
+}
+
+@media screen and (min-width: $mobile-break){
+	#navbar{
+		display: block;
+	}
+
+	#mobile-nav, .slicknav_menu{
+		display: none;
+	}
+
 
 }
 

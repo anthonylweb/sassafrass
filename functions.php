@@ -63,8 +63,74 @@ function mytheme_nav_fallback1() {
  */
 function sassy_widgets_init() {
 	register_sidebar( array(
-		'name' => __( 'Main Sidebar', 'nekked' ),
-		'id' => 'sidebar-1',
+		'name' => __( 'Left Sidebar', 'sassafrass' ),
+		'id' => 'sass_left-bar',
+        'class'         => 'sass_sidebar',
+        'description'   => 'Content area for page template displaying the left sidebar.',
+		'before_widget' => '<article id="%1$s" class="widget %2$s">',
+		'after_widget' => "</article>",
+		'before_title' => '<div class="widget-title">',
+		'after_title' => '</div>',
+	) );
+    
+    register_sidebar( array(
+		'name' => __( 'Right Sidebar', 'sassafrass' ),
+		'id' => 'sass_right-bar',
+        'class'         => 'sass_sidebar',
+        'description'   => 'Content area for page template displaying the right sidebar.',
+		'before_widget' => '<article id="%1$s" class="widget %2$s">',
+		'after_widget' => "</article>",
+		'before_title' => '<div class="widget-title">',
+		'after_title' => '</div>',
+	) );
+    
+    register_sidebar( array(
+		'name' => __( 'Home Secondary Content Section', 'sassafrass' ),
+		'id' => 'sass_hs-section',
+        'class'         => 'sass_secondary-ss',
+        'description'   => 'Content area for seconday page content specific to the hompage.',
+		'before_widget' => '<article id="%1$s" class="widget %2$s">',
+		'after_widget' => "</article>",
+		'before_title' => '<div class="widget-title">',
+		'after_title' => '</div>',
+	) );
+    
+    register_sidebar( array(
+		'name' => __( 'Subpage Secondary Content Section', 'sassafrass' ),
+		'id' => 'sass_ss-section',
+        'class'         => 'sass_secondary-ss',
+        'description'   => 'Content area for seconday page content for subpages.',
+		'before_widget' => '<article id="%1$s" class="widget %2$s">',
+		'after_widget' => "</article>",
+		'before_title' => '<div class="widget-title">',
+		'after_title' => '</div>',
+	) );
+    
+    register_sidebar( array(
+		'name' => __( 'Pre-Footer Content Section', 'sassafrass' ),
+		'id' => 'sass_pf-section',
+        'class'         => 'sass_pf-ss',
+        'description'   => 'Content area for the Pre Footer section.',
+		'before_widget' => '<article id="%1$s" class="widget %2$s">',
+		'after_widget' => "</article>",
+		'before_title' => '<div class="widget-title">',
+		'after_title' => '</div>',
+	) );
+    
+    register_sidebar( array(
+		'name' => __( 'Top Content Section', 'sassafrass' ),
+		'id' => 'sass_tc-section',
+        'class'         => 'sass_tc-ss',
+        'description'   => 'Content area between the header of the document and the main content section.',
+		'before_widget' => '<article id="%1$s" class="widget %2$s">',
+		'after_widget' => "</article>",
+		'before_title' => '<div class="widget-title">',
+		'after_title' => '</div>',
+	) );
+
+	register_sidebar( array(
+		'name' => __( 'Slideshow Area', 'sassafrass' ),
+		'id' => 'sidebar-slide',
 		'before_widget' => '<article id="%1$s" class="widget %2$s">',
 		'after_widget' => "</article>",
 		'before_title' => '<div class="widget-title">',
